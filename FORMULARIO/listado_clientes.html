@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--PAGINA DE MANUEL PARA MOSTRAR TODOS LOS CLIENTES-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Clientes</title>
+    <link rel="icon" href="../IMAGENES/logofav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<div>
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../IMAGENES/logo.png" alt="logo"
+                    class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center active" href="../index.html#sobrenosotros"><span
+                                class="material-symbols-outlined m-2">group</span>Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="../index.html#nosotros"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-symbols-outlined m-2">support_agent</span>Nuestros servicios
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-md-end border-white">
+                            <li><a class="dropdown-item" href="../SERVICIOS/servicioAsF.html">Asesoría fiscal</a></li>
+                            <li><a class="dropdown-item" href="../SERVICIOS/servicioAsC.html">Asesoría contable</a></li>
+                            <li><a class="dropdown-item" href="../SERVICIOS/servicioAsJ.html">Asesoría jurídica</a></li>
+                            <li><a class="dropdown-item" href="../SERVICIOS/servicioAsE.html">Asesoría para empresas</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../SERVICIOS/servicioCons.html">Consultoría</a></li>
+                            <li><a class="dropdown-item" href="../SERVICIOS/servicioAud.html">Auditorías</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../SERVICIOS/servicioCES.html">Creación de empresas y
+                                    sociedades</a></li>
+                            <li><a class="dropdown-item" href="../SERVICIOS/servicioIR.html">Impuestos de no
+                                    residientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="../contacto.html"><span
+                                class="material-symbols-outlined m-2">call</span>Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal de INFO CLIENTE -->
+    <div class="modal fade" id="infoModalCliente" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="infoModalLabelCliente">Informacion de la consulta</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalInfoContentCliente">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para modificar cliente -->
+    <div class="modal fade modal-lg" id="modModalCliente" tabindex="-1" aria-labelledby="errorModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal w-75 mx-auto" name="frmModificarCliente" id="frmModificarCliente">
+                    <div class="modal-header">
+                        <h3 id="modModalLabelCliente">Modificar Cliente</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalModContentCliente">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary mx-3" data-bs-dismiss="modal"
+                            id="btnModificarCliente">Modificar<i class="bi bi-check-lg mx-1"></i></button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar<i
+                                class="bi bi-x-lg mx-1"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para eliminar cliente -->
+    <!-- He creado de nuevo estos dos modales para poder eliminar y modificar en esta página también -->
+    <div class="modal fade" id="delModalCliente" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="delModalLabelCliente">Modificar Cliente</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalDelContentCliente">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                        id="btnEliminarCliente">Eliminar<i class="bi bi-person-x-fill mx-1"></i></button>
+                    <button type="button" class="btn btn-light mx-3" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-5 text-center">
+        <h2 class="text-center mb-1">Listado de todos los clientes</h2>
+        <h2 class="text-center mb-5 fs-5">(con todos los proyectos asociados)</h2>
+        <div id="listado" class="px-2 table-responsive">
+
+        </div>
+    </div>
+    <footer class="text-white text-center py-3 container-fluid">
+        <div class="row mb-5" id="row1">
+            <div class="col-md-3 mt-3 text-md-center text-end">
+                <img src="../IMAGENES/logofav.png" alt="logo" class="w-25 mb-4">
+                <p class="w-50 mx-md-auto offset-md-0 offset-6">Consultoría Finexpert cuenta con los mejores
+                    expertos en
+                    asesoramiento para todo tipo de consulterías financieras. UNA LARGA TRAYECTORIA PROFESIONAL NOS
+                    AVALA.</p>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h2 class="text-start">Contacto</h2>
+                <hr class="border-5 rounded-5 w-25">
+                <a href="#">
+                    <p class="text-start">+34 945 23 45 87</p>
+                </a>
+                <a href="#">
+                    <p class="text-start">info@Finexpert.org</p>
+                </a>
+                <a
+                    href="https://www.google.es/maps/place/Dos+Hermanas,+Sevilla/@37.2818051,-5.9488583,14z/data=!3m1!4b1!4m6!3m5!1s0xd12705c945f7355:0x1f6735c306757c59!8m2!3d37.2864406!4d-5.9240958!16zL20vMGh2ZF8?hl=es&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D">
+                    <p class="text-start">Av. España Dos Hermanas (Sevilla) 41700</p>
+                </a>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h2 class="text-start">Nuestros servicios</h2>
+                <hr class="border-5 rounded-5 w-25">
+                <ul>
+                    <li><a href="../SERVICIOS/servicioAsF.html">
+                            <p class="text-start">Asesoría fiscal</p>
+                        </a></li>
+                    <li><a href="../SERVICIOS/servicioAsC.html">
+                            <p class="text-start">Asesoría contable</p>
+                        </a></li>
+                    <li><a href="../SERVICIOS/servicioAsE.html">
+                            <p class="text-start">Asesoría para empresas</p>
+                        </a></li>
+                    <li><a href="../SERVICIOS/servicioAsJ.html">
+                            <p class="text-start">Asesoría jurídica</p>
+                        </a></li>
+                    <li><a href="../SERVICIOS/servicioCons.html">
+                            <p class="text-start">Consultoría</p>
+                        </a></li>
+                    <li><a href="../SERVICIOS/servicioAud.html">
+                            <p class="text-start">Auditoría</p>
+                        </a></li>
+                    <li><a href="../SERVICIOS/servicioCES.html">
+                            <p class="text-start">Creación de empresas y sociedades</p>
+                        </a></li>
+                    <li><a href="../SERVICIOS/servicioIR.html">
+                            <p class="text-start">Impuestos de no residentes</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h2 class="text-start">Nuestras politicas</h2>
+                <hr class="border-5 rounded-5 w-25">
+                <a href="#">
+                    <p class="text-start">Política de privacidad</p>
+                </a>
+                <a href="#">
+                    <p class="text-start">Política de cookies</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="w-75 mx-auto">
+            <p>©️ Derechos reservados para los integrantes del grupo 5: Manuel, Pedro y Angel 2024.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/objectos.js"></script>
+    <script>
+        // Script que se carga cuando se hace un open en el otro formulario
+        cargarListado();
+
+        // funcion que se ejecuta al cargar la pagina que llama al objeto del opener para listar todos los clientes y mostrarlos en una tabla con el formato correcto.
+        // Por eso se hace un innerHTML
+        async function cargarListado() {
+            document.querySelector("#listado").innerHTML = await opener.oProyecto.listarClientes();
+        }
+
+        // creamos el evento para la tabla para saber si se quiere modificar o no el cliente seleccionado
+        document.querySelector("#listado").addEventListener("click", function (oEvento) {
+            let boton = oEvento.target.closest("button");
+
+            if (boton) {
+                let cliente = JSON.parse(boton.getAttribute("datos-cliente"));
+
+                // Al recoger los atributos del cliente mediante el boton, ya solo llamamos a las funciones modificar o eliminar.
+                // Estas funciones son las mismas que en el codigo del anterior formulario, solo que adaptadas para una nueva página y sin modales de cofirmacion,
+                // los modales ahora solo mostran los errores que puedan surgir en las consultas.
+                if (oEvento.target.id == "lapiz" || oEvento.target.id == "btnModificar") {
+                    procesarModificarCliente(cliente);
+                }
+                if (oEvento.target.id == "basura" || oEvento.target.id == "btnEliminar") {
+                    procesarEliminarCliente(cliente);
+                }
+            }
+        });
+
+        // He creado aqui tambien las funciones para poder eliminar y modificar
+        // porque si no las creaba aqui y simplemente llamaba a las funciones del opener en codigo.js y se abrian en la pagina formularios.html
+        // Por eso estan incluidos aqui tambien los scripts de objetos y ajax. Para poder crear nuevos clientes a partir de la informacion modificada
+        async function procesarModificarCliente(cliente) {
+            let generoSeleccionado = "";
+            if (cliente.genero == "H") {
+                generoSeleccionado += "<option value='H' selected>Hombre</option>";
+                generoSeleccionado += "<option value='M'>Mujer</option>";
+            } else {
+                generoSeleccionado += "<option value='H'>Hombre</option>";
+                generoSeleccionado += "<option value='M' selected>Mujer</option>";
+            }
+            let formulario = "";
+            formulario += "<label class='col-xs-4 control-label' for='txtModificarClienteId'>Id:</label>";
+            formulario += "<div class='col-xs-4'>";
+            formulario += "<input id='txtModificarClienteId' name='txtModificarClienteId' placeholder='Id' class='form-control input-md' type='text' value='" + cliente.id + "' disabled>";
+            formulario += "</div>";
+            formulario += "<label class='col-xs-4 control-label' for='txtModificarClienteNombre'>Nombre:</label>";
+            formulario += "<div class='col-xs-4'>";
+            formulario += "<input id='txtModificarClienteNombre' name='txtModificarClienteNombre' placeholder='Nombre' class='form-control input-md' type='text' value='" + cliente.nombre + "'>";
+            formulario += "</div>";
+            formulario += "<label class='col-xs-4 control-label' for='txtModificarClienteApellidos'>Apellidos:</label>";
+            formulario += "<div class='col-xs-4'>";
+            formulario += "<input id='txtModificarClienteApellidos' name='txtModificarClienteApellidos' placeholder='Apellidos' class='form-control input-md' type='text' value='" + cliente.apellidos + "'>";
+            formulario += "</div>";
+            formulario += "<label class='col-xs-4 control-label' for='txtModificarClienteCorreo'>Correo:</label>";
+            formulario += "<div class='col-xs-4'>";
+            formulario += "<input id='txtModificarClienteCorreo' name='txtModificarClienteCorreo' placeholder='Apellidos' class='form-control input-md' type='text' value='" + cliente.correo + "'>";
+            formulario += "</div>";
+            formulario += "<label class='col-xs-4 control-label' for='optModificarClienteGenero'>Genero:</label>";
+            formulario += "<div class='col-xs-4'>";
+            formulario += "<select name='optModificarClienteGenero' id='optModificarClienteGenero' class='form-select'>";
+            formulario += generoSeleccionado;
+            formulario += "</select>";
+            formulario += "</div>";
+            formulario += "<label class='col-xs-4 control-label' for='optModificarClienteGenero'>Proyecto asociado:</label>";
+            formulario += "<div class='col-xs-4'>";
+            formulario += "<select name='optModificarClienteProyecto' id='optModificarClienteProyecto' class='form-select'>";
+            let respuesta = await opener.oProyecto.getProyectosClienteMod(cliente.id_proyecto);
+            formulario += respuesta;
+            formulario += "</select>";
+            formulario += "</div>";
+            document.getElementById("modalModContentCliente").innerHTML = formulario;
+            let formularioModClienteModal = new bootstrap.Modal(document.getElementById("modModalCliente"));
+            formularioModClienteModal.show();
+
+            document.querySelector("#modModalCliente").addEventListener("click", async function (oEvento) {
+                let boton = oEvento.target.closest("button");
+
+                if (boton) {
+                    if (oEvento.target.id == "btnModificarCliente") {
+                        let idCliente = document.getElementById("txtModificarClienteId").value.trim();
+                        let nombreCliente = document.getElementById("txtModificarClienteNombre").value.trim();
+                        let apellidosCliente = document.getElementById("txtModificarClienteApellidos").value.trim();
+                        let correoCliente = document.getElementById("txtModificarClienteCorreo").value.trim();
+                        let generoCliente = document.getElementById("optModificarClienteGenero").value.trim();
+                        let idProyecto = document.getElementById("optModificarClienteProyecto").value.trim();
+
+                        if (idProyecto == "") {
+                            idProyecto = null;
+                        }
+
+                        let clienteAModificar = null;
+
+                        if (cliente.id_proyecto == idProyecto) {
+                            clienteAModificar = new Cliente(idCliente, nombreCliente, apellidosCliente, correoCliente, generoCliente, idProyecto);
+                        } else {
+                            if (idProyecto == null) {
+                                let respuesta = await opener.oProyecto.eliminarProyectoDeCliente(cliente.id);
+                                if (!respuesta.ok) {
+                                    formularioModClienteModal.hide();
+                                    document.getElementById("modalInfoContentCliente").innerHTML = "<p>" + respuesta.mensaje + "</p>";
+                                    let infoModal = new bootstrap.Modal(document.getElementById("infoModalCliente"));
+                                    infoModal.show();
+                                } else {
+                                    clienteAModificar = new Cliente(idCliente, nombreCliente, apellidosCliente, correoCliente, generoCliente, idProyecto);
+                                }
+                            } else {
+                                let eliminadoAntesDeModificar = true;
+                                if (cliente.id_proyecto != null) {
+                                    let respuesta = await opener.oProyecto.eliminarProyectoDeCliente(cliente.id);
+                                    if (!respuesta.ok) {
+                                        formularioModClienteModal.hide();
+                                        document.getElementById("modalInfoContentCliente").innerHTML = "<p>" + respuesta.mensaje + "</p>";
+                                        let infoModal = new bootstrap.Modal(document.getElementById("infoModalCliente"));
+                                        infoModal.show();
+                                        eliminadoAntesDeModificar = false;
+                                    }
+                                }
+                                if (eliminadoAntesDeModificar) {
+                                    let respuesta = await opener.oProyecto.modificarProyectoDeCliente(idProyecto, cliente.id);
+                                    if (!respuesta.ok) {
+                                        formularioModClienteModal.hide();
+                                        document.getElementById("modalInfoContentCliente").innerHTML = "<p>" + respuesta.mensaje + "</p>";
+                                        let infoModal = new bootstrap.Modal(document.getElementById("infoModalCliente"));
+                                        infoModal.show();
+                                    } else {
+                                        clienteAModificar = new Cliente(idCliente, nombreCliente, apellidosCliente, correoCliente, generoCliente, idProyecto);
+                                    }
+                                }
+                            }
+                        }
+                     
+                        if (cliente != null) {
+                            formularioModClienteModal.hide();
+                            let respuesta = await opener.oProyecto.modificarCliente(clienteAModificar);
+
+                            if (!respuesta.ok) {
+                                document.getElementById("modalInfoContentCliente").innerHTML = "<p>" + respuesta.mensaje + "</p>";
+                                let infoModal = new bootstrap.Modal(document.getElementById("infoModalCliente"));
+                                infoModal.show();
+                                document.querySelector("#listado").classList.remove("d-block");
+                                document.querySelector("#listado").classList.add("d-none");
+                                frmBuscarCliente.reset();
+                            } else {
+                                // Y cuando el cliente se modifique correctamente se recargara la pagina en lugar de mostrar un modal.
+                                // Esto lo hago para que se recargue la tabla con el listado y los datos actualizados
+                                location.reload();
+                            }
+                        }
+                    }
+                    if (oEvento.target.id == "btnCancelarModificarCliente") {
+                        formularioModClienteModal.hide();
+                    }
+                }
+            });
+        }
+
+        async function procesarEliminarCliente(cliente) {
+            let mensaje = "¿Estás seguro de que quieres eliminar el cliente <strong>" + cliente.nombre + "</strong>  <strong>" + cliente.apellidos + "</strong> con correo <strong>" + cliente.correo + "</strong>?";
+            document.getElementById("modalDelContentCliente").innerHTML = "<p>" + mensaje + "</p>";
+            let eliminarModal = new bootstrap.Modal(document.getElementById("delModalCliente"));
+            eliminarModal.show();
+            document.querySelector("#delModalCliente").addEventListener("click", async function (oEvento) {
+                let boton = oEvento.target.closest("button");
+
+                if (boton) {
+                    if (oEvento.target.id == "btnEliminarCliente") {
+                        eliminarModal.hide();
+                        let proyectoEliminado = true;
+                        if (cliente.id_proyecto != null) {
+                            let respuesta = await opener.oProyecto.eliminarProyectoDeCliente(cliente.id);
+                            if (!respuesta.ok) {
+                                proyectoEliminado = false;
+                                document.getElementById("modalInfoContentCliente").innerHTML = "<p>" + respuesta.mensaje + "</p>";
+                                let infoModal = new bootstrap.Modal(document.getElementById("infoModalCliente"));
+                                infoModal.show();
+                                document.querySelector("#listado").classList.remove("d-block");
+                                document.querySelector("#listado").classList.add("d-none");
+                                frmBuscarCliente.reset();
+                            }
+                        }
+                        if (proyectoEliminado) {
+                            let respuesta = await opener.oProyecto.eliminarCliente(cliente.id);
+                            if (!respuesta.ok) {
+                                document.getElementById("modalInfoContentCliente").innerHTML = "<p>" + respuesta.mensaje + "</p>";
+                                let infoModal = new bootstrap.Modal(document.getElementById("infoModalCliente"));
+                                infoModal.show();
+                                document.querySelector("#listado").classList.remove("d-block");
+                                document.querySelector("#listado").classList.add("d-none");
+                                frmBuscarCliente.reset();
+                            } else {
+                                // Y cuando el cliente se modifique correctamente se recargara la pagina en lugar de mostrar un modal.
+                                // Esto lo hago para que se recargue la tabla con el listado y los datos actualizados
+                                location.reload();
+                            }
+
+                        }
+                    }
+                }
+
+            });
+        }
+    </script>
+    </body>
+
+</html>

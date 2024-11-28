@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finexpert</title>
+    <link rel="icon" href="IMAGENES/logofav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="IMAGENES/logo.png" alt="logo"
+                    class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center active" href="index.html#sobrenosotros"><span
+                                class="material-symbols-outlined m-2">group</span>Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-symbols-outlined m-2">support_agent</span>Nuestros servicios
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-md-end border-white">
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAsF.html">Asesoría fiscal</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAsC.html">Asesoría contable</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAsJ.html">Asesoría jurídica</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAsE.html">Asesoría para empresas</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioCons.html">Consultoría</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAud.html">Auditorías</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioCES.html">Creación de empresas y
+                                    sociedades</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioIR.html">Impuestos de no
+                                    residientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="contacto.html"><span
+                                class="material-symbols-outlined m-2">call</span>Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a class="navbar-brand" href="#"><img src="IMAGENES/consulteria1.jpg" class="d-block w-100"
+                        alt="consulteria1"></a>
+                <div class="carousel-caption">
+                    <div class="bg-dark bg-opacity-75 p-3 rounded">
+                        <h5 class="text-white">Consultoría Financiera</h5>
+                        <p class="text-white">Asesoramiento experto para mejorar tu salud financiera</p>
+                        <a href="index.html#sobrenosotros" class="btn btn-light btn-lg">Descubre sobre nosotros</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="IMAGENES/consulteria2.png" class="d-block w-100" alt="consulteria2">
+                <div class="carousel-caption">
+                    <div class="bg-dark bg-opacity-75 p-3 rounded">
+                        <h5 class="text-white">Servicios Finexpert</h5>
+                        <p class="text-white">Te ofrecemos los mejores servicios de los mejores profesionales</p>
+                        <a href="index.html#servicios" class="btn btn-light btn-lg">Descubre nuestros servicios</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="IMAGENES/consulteria3.png" class="d-block w-100" alt="consulteria3">
+                <div class="carousel-caption">
+                    <div class="bg-dark bg-opacity-75 p-3 rounded">
+                        <h5 class="text-white">Nuestro contacto</h5>
+                        <p class="text-white">No dudes en contactarnos para cualquier duda</p>
+                        <a href="contacto.html" class="btn btn-light btn-lg">Nuestro contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 contact-info informacion">
+                <h2>Contacto</h2>
+                <hr class="border-5 rounded-5 w-25 mb-3">
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-telephone-fill"></i> <strong>Teléfono:</strong> +34 945 23 45 87</li>
+                    <li><i class="bi bi-envelope-fill"></i> <strong>Correo Electrónico:</strong> info@Finexpert.org
+                    </li>
+                    <li><strong>Dirección:</strong> Av. España Dos Hermanas (Sevilla) 41700</li>
+                </ul>
+
+                <!-- Acordeón de Consultoría Financiera -->
+                <div class="mt-4 mb-5 informacion">
+                    <h2>Información sobre Consultoría Financiera</h2>
+                    <hr class="border-5 rounded-5 w-50 mb-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Qué es una Consultoría Financiera?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    La consultoría financiera es un servicio que ofrece asesoramiento sobre la gestión
+                                    de finanzas personales o empresariales. Esto incluye la planificación financiera, la
+                                    inversión y la optimización de recursos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Beneficios de Contratar un Consultor Financiero
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Un consultor financiero puede ayudar a optimizar tus inversiones, gestionar tu
+                                    deuda, y planificar tu jubilación, lo que puede llevar a una mayor seguridad
+                                    financiera.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Servicios Ofrecidos
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Los servicios pueden incluir planificación financiera, gestión de inversiones,
+                                    asesoría tributaria y consultoría en la gestión de riesgos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 informacion">
+                <h2>Ubicación</h2>
+                <hr class="border-5 rounded-5 w-25 mb-3">
+                <div class="map-container rounded shadow mb-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.4188314090306!2d-5.91812278794725!3d37.28520627199661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd12705c5bb5267b%3A0x8769e97280238779!2sAv.%20de%20Espa%C3%B1a%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1730273899703!5m2!1ses!2ses"
+                        allowfullscreen="" loading="lazy" class="w-100 h-100 border-0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white text-center py-3 container-fluid">
+        <div class="row mb-5" id="row1">
+            <div class="col-md-3 mt-3 text-md-center text-end">
+                <img src="IMAGENES/logofav.png" alt="logo" class="w-25 mb-4">
+                <p class="w-50 mx-md-auto offset-md-0 offset-6">Consultoría Finexpert cuenta con los mejores expertos en
+                    asesoramiento para todo tipo de consulterías financieras. UNA LARGA TRAYECTORIA PROFESIONAL NOS
+                    AVALA.</p>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h2 class="text-start">Contacto</h2>
+                <hr class="border-5 rounded-5 w-25">
+                <a href="#">
+                    <p class="text-start">+34 945 23 45 87</p>
+                </a>
+                <a href="#">
+                    <p class="text-start">info@Finexpert.org</p>
+                </a>
+                <a
+                    href="https://www.google.es/maps/place/Dos+Hermanas,+Sevilla/@37.2818051,-5.9488583,14z/data=!3m1!4b1!4m6!3m5!1s0xd12705c945f7355:0x1f6735c306757c59!8m2!3d37.2864406!4d-5.9240958!16zL20vMGh2ZF8?hl=es&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D">
+                    <p class="text-start">Av. España Dos Hermanas (Sevilla) 41700</p>
+                </a>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h2 class="text-start">Nuestros servicios</h2>
+                <hr class="border-5 rounded-5 w-25">
+                <ul>
+                    <li><a href="SERVICIOS/servicioAsF.html">
+                            <p class="text-start">Asesoría fiscal</p>
+                        </a></li>
+                    <li><a href="SERVICIOS/servicioAsC.html">
+                            <p class="text-start">Asesoría contable</p>
+                        </a></li>
+                    <li><a href="SERVICIOS/servicioAsE.html">
+                            <p class="text-start">Asesoría para empresas</p>
+                        </a></li>
+                    <li><a href="SERVICIOS/servicioAsJ.html">
+                            <p class="text-start">Asesoría jurídica</p>
+                        </a></li>
+                    <li><a href="SERVICIOS/servicioCons.html">
+                            <p class="text-start">Consultoría</p>
+                        </a></li>
+                    <li><a href="SERVICIOS/servicioAud.html">
+                            <p class="text-start">Auditoría</p>
+                        </a></li>
+                    <li><a href="SERVICIOS/servicioCES.html">
+                            <p class="text-start">Creación de empresas y sociedades</p>
+                        </a></li>
+                    <li><a href="SERVICIOS/servicioIR.html">
+                            <p class="text-start">Impuestos de no residentes</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h2 class="text-start">Nuestras politicas</h2>
+                <hr class="border-5 rounded-5 w-25">
+                <a href="#">
+                    <p class="text-start">Política de privacidad</p>
+                </a>
+                <a href="#">
+                    <p class="text-start">Política de cookies</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="w-75 mx-auto">
+            <p>©️ Derechos reservados para los integrantes del grupo 5: Manuel, Pedro y Angel 2024.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

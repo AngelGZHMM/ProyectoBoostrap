@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finexpert</title>
+    <link rel="icon" href="IMAGENES/logofav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="fade-in-start">
+
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="IMAGENES/logo.png" alt="logo" class="d-inline-block align-text-top"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center active" href="index.html#sobrenosotros"><span class="material-symbols-outlined m-2">group</span>Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-symbols-outlined m-2">support_agent</span>Servicios
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-md-end border-white">
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAsF.html">Asesoría fiscal</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAsC.html">Asesoría contable</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAsJ.html">Asesoría jurídica</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAsE.html">Asesoría para empresas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioCons.html">Consultoría</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioAud.html">Auditorías</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioCES.html">Creación de empresas y sociedades</a></li>
+                            <li><a class="dropdown-item" href="SERVICIOS/servicioIR.html">Impuestos de no residientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="contacto.html"><span class="material-symbols-outlined m-2">call</span>Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="FORMULARIO/formularios.html"><span class="material-symbols-outlined m-2">description</span>Formulario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a class="navbar-brand" href="#"><img src="IMAGENES/consulteria1.jpg" class="d-block w-100" alt="consulteria1"></a>
+              <div class="carousel-caption">
+                  <div class="bg-dark bg-opacity-75 p-3 rounded slide-up">
+                      <h5 class="text-white">Consultoría Financiera</h5>
+                      <p class="text-white">Asesoramiento experto para mejorar tu salud financiera</p>
+                      <a href="index.html#sobrenosotros" class="btn btn-light btn-lg">Descubre sobre nosotros</a>
+                  </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="IMAGENES/consulteria2.png" class="d-block w-100" alt="consulteria2">
+              <div class="carousel-caption">
+                  <div class="bg-dark bg-opacity-75 p-3 rounded">
+                      <h5 class="text-white">Servicios Finexpert</h5>
+                      <p class="text-white">Te ofrecemos los mejores servicios de los mejores profesionales</p>
+                      <a href="#servicios" class="btn btn-light btn-lg">Descubre nuestros servicios</a>
+                  </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="IMAGENES/consulteria3.png" class="d-block w-100" alt="consulteria3">
+              <div class="carousel-caption">
+                  <div class="bg-dark bg-opacity-75 p-3 rounded">
+                      <h5 class="text-white">Nuestro contacto</h5>
+                      <p class="text-white">No dudes en contactarnos para cualquier duda</p>
+                      <a href="contacto.html" class="btn btn-light btn-lg">Nuestro contacto</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+
+      <section id="nosotros" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nosotros somos FINEXPERT</h2>
+            <div class="row">
+                <hr class="border-5 rounded-5 w-25 mx-auto">
+                <h5 class="text-center text-black-50 p-4">¿Qué te ofrecemos?</h5>
+                <h3 class="text-center mb-5">Todos nuestros servicios a tu disposición</h3>
+            </div>
+            <div class="row" id="servicios">
+                <div class="col-md-4">
+                    <div class="card mb-4 text-start border-0">
+                        <div class="card-body">
+                            <a href="SERVICIOS/serviciosAs.html" class="text-decoration-none text-black"><h5><span class="material-symbols-outlined m-2 bg-dark text-white p-2 rounded-circle">support_agent</span>Servicios de asesoría</h5></a>
+                            <p class="card-text">Asesoría en Finexpert, ofrecemos asesoramiento fiscal y legal de la más alta calidad. Con amplia experiencia en el sector, nos comprometemos a brindar soluciones personalizadas y eficientes para satisfacer todas tus necesidades fiscales. Confía en nuestros expertos para obtener un servicio profesional y cercano.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 text-start border-0">
+                        <div class="card-body">
+                            <a href="SERVICIOS/serviciosConsAud.html" class="text-decoration-none text-black"><h5><span class="material-symbols-outlined m-2 bg-dark text-white p-2 rounded-circle">insert_chart</span>Servicios de auditoría</h5></a>
+                            <p class="card-text">¿Conoce el estado financiero de su empresa? Le ofrecemos la mejor solución para su tranquilidad. Auditorias financieras, contables y empresariales para que sepa el estado de su empresa en todo momento. Ademas le ofrecemos también a nuestros grandes consultores especializados en realizar análisis financieros y empresariales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 text-start border-0">
+                        <div class="card-body">
+                            <a href="SERVICIOS/serviciosRes.html" class="text-decoration-none text-black"><h5><span class="material-symbols-outlined m-2 bg-dark text-white p-2 rounded-circle">house</span>Servicios de residencia</h5></a>
+                            <p class="card-text">¿Necesita ayuda con su situación fiscal y de residencia? Le brindamos asesoramiento especializado para gestionar sus obligaciones tributarias y optimizar su carga impositiva, tanto para residentes como no residentes. Confíe en nuestros expertos para asegurar el cumplimiento legal y maximizar sus beneficios fiscales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobrenosotros" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <h2 class="text-start mb-3">¿Quiénes somos?</h2>
+                    <hr class="border-5 rounded-5 w-25 mb-3">
+                    <h5 class="text-black-50">Nosotros somos un grupo de alumnos cursando el grado superior de DAM.</h5>
+                    <p>Nuestro equipo está compuesto por estudiantes apasionados de Desarrollo de Aplicaciones Multiplataforma, con un enfoque en la innovación tecnológica y la optimización de procesos. Nos unimos con la misión de ofrecer soluciones digitales que simplifiquen y mejoren la vida de las personas y las empresas, utilizando las herramientas y conocimientos adquiridos durante nuestra formación académica.</p>
+                    <p>Estamos comprometidos en brindar un enfoque joven y fresco a las consultas financieras, buscando siempre la calidad y la eficiencia en cada consulta. Creemos en el poder de la tecnología para transformar negocios y estamos aquí para ayudarte a alcanzar tus objetivos financieros.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="IMAGENES/empresarios.jpeg" alt="Nosotros" class="w-100">
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <img src="IMAGENES/empresariosTrabajando.jpg" alt="Nosotros" class="w-100">
+                </div>
+                <div class="col-lg-6 ps-lg-5 pt-5">
+                    <h2 class="text-lg-end mb-3">¿A qué nos dedicamos?</h2>
+                    <hr class="border-5 rounded-5 w-25 mb-3 ms-lg-auto">
+                    <h5 class="text-black-50 text-lg-end">Finexpert pertenece al grupo de asesores y consultores del grupo de Desarrollo de Interfaces Web.</h5>
+                    <p class="text-lg-end">Nuestra empresa Finexpert, esta compuesta por los mejores profesionales del sector que te ayudaran a tomar las mejores decisiones financieras adecuadas a la función y situación de tu empresa. Si lo que necesitas es una asesoría fiscal en Sevilla, te recomendamos que eches un vistazo a nuestra página web, seguro que te encantara.</p>
+                    <p class="text-lg-end">En general, estamos enfocados ante todo en priorizar una experiencia suave, limpia y rápida para el usuario ya que queremos que su dinero se maneje de la manera mas sencilla posible.</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <h2 class="text-start mb-3">Atención totalmente personalizada</h2>
+                <hr class="border-5 rounded-5 w-25 mb-3 mx-2">
+                <h5 class="text-black-50">Finexpert: Consultoría financiera con enfoque en cada detalle personal.</h5>
+                <p>En Finexpert, somos conscientes de que cada cliente tiene una historia y necesidades financieras propias. Por eso, nuestra prioridad es conocer a fondo cada situación, analizando todos los factores personales que influyen en sus decisiones y objetivos. Nuestro equipo de asesores está formado por especialistas que se toman el tiempo de escuchar y entender cada detalle, desde las metas a corto plazo hasta las aspiraciones a largo plazo de nuestros clientes. Sabemos que solo con una comprensión profunda de cada caso podemos ofrecer recomendaciones financieras que se ajusten realmente a lo que cada empresa o individuo necesita para crecer.</p>
+                <p>Trabajamos con un enfoque flexible y adaptable que prioriza siempre el bienestar financiero de nuestros clientes, independientemente de la complejidad o características específicas de su situación. Desde asesoramiento fiscal hasta gestión de inversiones, nuestra misión es proporcionar soluciones diseñadas exclusivamente para cada persona, generando un impacto positivo y duradero en su planificación financiera. En Finexpert, no creemos en las soluciones generales; creemos en el poder de un servicio personalizado que inspire confianza y acompañe a nuestros clientes en cada etapa de su camino hacia el éxito financiero.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-3 container-fluid">
+        <div class="row mb-5" id="row1">
+            <div class="col-md-3 mt-3 text-md-center text-end">
+                <img src="IMAGENES/logofav.png" alt="logo" class="w-25 mb-4">
+                <p class="w-50 mx-md-auto offset-md-0 offset-6">Consultoría Finexpert cuenta con los mejores expertos en asesoramiento para todo tipo de consulterías financieras. UNA LARGA TRAYECTORIA PROFESIONAL NOS AVALA.</p>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h2 class="text-start">Contacto</h2>
+                <hr class="border-5 rounded-5 w-25">
+                <a href="#"><p class="text-start">+34 945 23 45 87</p></a>
+                <a href="#"><p class="text-start">info@Finexpert.org</p></a>
+                <a href="https://www.google.es/maps/place/Dos+Hermanas,+Sevilla/@37.2818051,-5.9488583,14z/data=!3m1!4b1!4m6!3m5!1s0xd12705c945f7355:0x1f6735c306757c59!8m2!3d37.2864406!4d-5.9240958!16zL20vMGh2ZF8?hl=es&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"><p class="text-start">Av. España Dos Hermanas (Sevilla) 41700</p></a>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h2 class="text-start">Nuestros servicios</h2>
+                <hr class="border-5 rounded-5 w-25">
+                <ul>
+                    <li><a href="SERVICIOS/servicioAsF.html"><p class="text-start">Asesoría fiscal</p></a></li>
+                    <li><a href="SERVICIOS/servicioAsC.html"><p class="text-start">Asesoría contable</p></a></li>
+                    <li><a href="SERVICIOS/servicioAsE.html"><p class="text-start">Asesoría para empresas</p></a></li>
+                    <li><a href="SERVICIOS/servicioAsJ.html"><p class="text-start">Asesoría jurídica</p></a></li>
+                    <li><a href="SERVICIOS/servicioCons.html"><p class="text-start">Consultoría</p></a></li>
+                    <li><a href="SERVICIOS/servicioAud.html"><p class="text-start">Auditoría</p></a></li>
+                    <li><a href="SERVICIOS/servicioCES.html"><p class="text-start">Creación de empresas y sociedades</p></a></li>
+                    <li><a href="SERVICIOS/servicioIR.html"><p class="text-start">Impuestos de no residentes</p></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h2 class="text-start">Nuestras politicas</h2>
+                <hr class="border-5 rounded-5 w-25">
+                <a href="#"><p class="text-start">Política de privacidad</p></a>
+                <a href="#"><p class="text-start">Política de cookies</p></a>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="w-75 mx-auto">
+            <p>©️ Derechos reservados para los integrantes del grupo 5: Manuel, Pedro y Angel 2024.</p>
+        </div>
+    </footer>
+    <!-- Contenedor para la toast -->
+    <div class="toast-container slide-up">
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="IMAGENES/logofav.png" class="rounded me-2 custom-size" alt="logofav">
+                <strong class="me-auto">FINEXPERT</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                ¡Bienvenidos a <strong>FINEXPERT</strong>, tu asesoría financiera de confianza!
+            </div>
+        </div>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

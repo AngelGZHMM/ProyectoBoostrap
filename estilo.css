@@ -1,0 +1,268 @@
+.navbar {
+    background-color: #202639;
+}
+
+.carousel {
+    position: relative;
+}
+
+.position-absolute {
+    z-index: 10;
+}
+
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#menuDeNavegacion,
+footer,
+.dropdown-menu {
+    background-color: #202639;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.carousel-inner img {
+    max-height: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.navbar-nav .nav-link.active {
+    color: #e9720a !important;
+    font-weight: bold;
+    font-size: 0.79rem;
+}
+
+.navbar-nav .nav-link {
+    color: #e9720a !important;
+    font-size: 0.79rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e9720a !important;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid rgb(186, 186, 186);
+    background-color: rgb(186, 186, 186);
+    opacity: 1;
+}
+
+#row1 hr,
+section hr,
+.informacion hr {
+    border: 2px solid #fd9b27;
+    background-color: #fd9b27;
+    opacity: 1;
+}
+
+footer a {
+    color: #fd9b27;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.79rem;
+}
+
+.footerpgrande {
+    font-size: 1rem;
+}
+
+.dropdown-item {
+    color: #e9720a !important;
+    font-size: 0.79rem;
+}
+
+.dropdown-item:hover {
+    font-weight: bold;
+    background-color: #202639;
+}
+
+#nosotros p {
+    font-size: 0.85rem;
+}
+
+#provincias {
+    display: none;
+}
+
+form:has(#gridRadios2:checked) #provincias {
+    display: block;
+}
+
+h2 {
+    font-family: "Homer Simpson UI";
+}
+
+h3, th{
+    font-family: "Segoe IU", sans-serif;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+.btn {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.map-container {
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.contact-info {
+    transition: transform 0.3s;
+}
+
+.contact-info:hover {
+    transform: scale(1.05);
+}
+
+#card-asesoria:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#card-consultoria:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#card-auditoria:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#card-empresa:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#card-NoR:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-start {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.slide-up {
+    animation: slideUpFadeIn 3s ease-out forwards;
+}
+
+.toast-container {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1050; 
+}
+
+.custom-size {
+    width: 30px; 
+    height: auto; 
+}
+
+.btn-close:hover{
+    background-color: #e9720a;
+}
+
+.bi-gender-female {
+    color: rgb(255, 0, 179);
+}
+
+.bi-gender-male {
+    color: rgb(0, 68, 255);
+}
+
+.table-group-divider {
+    color:#fd9b27;
+}
+
+th {
+    color: #202639 !important;
+}
+
+.campoTablaLargo {
+    max-height: 75px;
+    overflow-y: auto;
+}
+
+/* 2ºParte */
+#customDropdowns .dropdown-toggle {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #202639 !important;
+    text-decoration: none;
+    color: #000;
+}
+
+#customDropdowns .dropdown-toggle:hover {
+    background-color: #5f6474;
+}
+
+input.formInvalido, select.formInvalido {
+    border: 2px solid red !important;
+}
+
+.btn-secondary {
+    background-color: #202639;
+    border-color: #202639;
+    color: #e9720a;
+}
+
+.btn-secondary:hover {
+    background-color: #202639;
+    border-color: #202639;
+    color: #e9720a;
+    font-weight: bold;
+}
